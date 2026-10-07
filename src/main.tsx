@@ -4,6 +4,6 @@ import "./global.css";
 
 createRoot(document.getElementById("root")!).render(
 	<StrictMode>
-		<div>Project cleaned</div>
+		<div className="text-blue-500">Project cleaned</div>
 	</StrictMode>,
 );
