@@ -4,7 +4,11 @@ import "./global.css";
 import { createRouter, RouterProvider } from "@tanstack/react-router";
 import { routeTree } from "@/routeTree.gen";
 
-const router = createRouter({ routeTree });
+const router = createRouter({
+	routeTree,
+	defaultPreload: "intent",
+	scrollRestoration: true,
+});
 
 declare module "@tanstack/react-router" {
 	interface Register {
